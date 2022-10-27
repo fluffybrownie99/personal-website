@@ -1,12 +1,13 @@
 body {
-    background-color: #D6F7FF;
+    background-color: #E5E5DC;
 }
 h1 {
     color:#004E61;
 }
-nav {
+header, footer{
     text-align: center;
     background-color: lightblue;
+    padding-bottom:0.1pc
 }
 
 .intropgh1{
@@ -18,7 +19,33 @@ nav {
 ul {
     list-style: none;
 }
+.external_links{
+    display: inline-flex;
+    column-gap: 10%;
+    
+}
+.navlink{
+
+}
+
+.mainbody{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10% repeat(3, 1 fr);
+}
 .image {
-    display: flex;
-    justify-content:flex-end;
+    grid-column: 2;
+    grid-row: 2;
+}
+.about{
+    grid-row:1;
+    grid-column: 1;
+}
+.homepara1{
+    grid-row: 2 ;
+    grid-column: 1/2;
+}
+.homepara2{
+    grid-row:3 ;
+    grid-column: 1;
 }
