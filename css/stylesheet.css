@@ -24,9 +24,7 @@ ul {
     column-gap: 10%;
     
 }
-.navlink{
 
-}
 
 .mainbody{
     display: grid;
@@ -36,6 +34,7 @@ ul {
 .image {
     grid-column: 2;
     grid-row: 2;
+    padding-left: 1%;
 }
 .about{
     grid-row:1;
