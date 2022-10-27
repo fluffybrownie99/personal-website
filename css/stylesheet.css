@@ -11,4 +11,14 @@ nav {
 
 .intropgh1{
     font-family: 'Montserrat', sans-serif;
+    display:flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+.image {
+    display: flex;
+    justify-content:flex-end;
 }
