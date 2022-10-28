@@ -1,14 +1,21 @@
 body {
     background-color: #E5E5DC;
 }
-h1 {
+
+h1, h2{
     color:#334259;
 }
+
 header, footer{
     text-align: center;
-    background-color: lightblue;
+    background-color: #a6cad4;
     padding-bottom:0.1pc
 }
+
+ul {
+    list-style: none;
+}
+
 
 .intropgh1{
     font-family: 'Montserrat', sans-serif;
@@ -16,20 +23,16 @@ header, footer{
     justify-content: center;
 }
 
-ul {
-    list-style: none;
-}
 .external_links{
     display: inline-flex;
     column-gap: 10%;
     
 }
 
-
 .mainbody{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 10% repeat(3, 1 fr);
+    grid-template-rows: 10%;
 }
 .image {
     grid-column: 2;
