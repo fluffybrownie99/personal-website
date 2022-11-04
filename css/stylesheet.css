@@ -17,16 +17,18 @@ ul {
 }
 
 
+
 .intropgh1{
     font-family: 'Montserrat', sans-serif;
     display:flex;
     justify-content: center;
 }
 
-.external_links{
-    display: inline-flex;
-    column-gap: 10%;
-    
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;   
 }
 
 .mainbody{
@@ -50,4 +52,16 @@ ul {
 .homepara2{
     grid-row:3 ;
     grid-column: 1;
+}
+@media screen and (min-width: 600px) {
+    nav ul {
+        display: inline-flex;
+        
+    }
+    ul li {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+    }
 }
