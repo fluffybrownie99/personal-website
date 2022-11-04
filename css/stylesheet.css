@@ -6,17 +6,15 @@ h1, h2{
     color:#334259;
 }
 
-header, footer{
+.mainheader {
+    display: grid;
+} 
+
+footer{
     text-align: center;
     background-color: #a6cad4;
     padding-bottom:0.1pc
 }
-
-ul {
-    list-style: none;
-}
-
-
 
 .intropgh1{
     font-family: 'Montserrat', sans-serif;
@@ -24,11 +22,29 @@ ul {
     justify-content: center;
 }
 
+nav {
+    background-color: lightblue;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: column;   
+    flex-direction: column;
+}
+section ul{
+    padding:0%;
+    border-bottom: none;
+}
+
+section ul li{
+    padding-top: 1%;
+    border-bottom: 2px solid lightgrey;
 }
 
 .mainbody{
@@ -56,12 +72,13 @@ nav ul {
 @media screen and (min-width: 600px) {
     nav ul {
         display: inline-flex;
-        
     }
-    ul li {
+    section ul li {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 0.5fr;
+        border-bottom: 2px solid black;
+        
     }
 }
