@@ -37,12 +37,12 @@ nav ul {
     text-align: center;
     flex-direction: column;
 }
-section ul{
+main ul{
     padding:0%;
     border-bottom: none;
 }
 
-section ul li{
+main ul li{
     padding-top: 1%;
     border-bottom: 2px solid lightgrey;
 }
@@ -73,7 +73,7 @@ section ul li{
     nav ul {
         display: inline-flex;
     }
-    section ul li {
+    main ul li {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 1fr 1fr;
