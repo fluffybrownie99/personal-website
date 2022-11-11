@@ -1,20 +1,27 @@
-const ACIT1620 = {
-    code: "ACIT 1620", name:"Fundamental Web Technologies"
+var courselist = [
+    {code: "ACIT 1620", class: "Fundamental Web Technologies"},
+    {code: "MATH 1310", class: "Technical Math for IT"},
+    {code: "ACIT 1515", class: "Scripting for IT" }];
+
+
+var coursec;
+do {
+    coursec = prompt("Please enter a course code");
+} while (coursec.length !== 4 || isNaN(Number(coursec))) 
+var printed = false
+for (let x in courselist) {
+    if (courselist[x].code.includes(coursec)) {
+        console.log(`Yes, I am taking this course: ${courselist[x].code} - ${courselist[x].class}`);
+        printed =true
 }
-const MATH1310 = {code: "MATH 1310", name:"Technical Math for IT"
 }
-const ACIT1515 = {code: "ACIT 1515", name:"Scripting for IT"
-}
-const courselist = [ACIT1620, MATH1310, ACIT1515]
-
-var coursec = prompt("Please enter a course code")
-
-if (coursec != int || coursec < 1000 || coursec > 9999) {
-    let coursec = prompt("Invalid response. Please enter a course code")
-    }
-
-if (coursec) in courselist{code},
-
-for (var x = 0; x < 9999; i++) {
-    console.log(`Yes, I am taking this course: ${courselist[x]})
+if (printed == false){
+    let coursePrefix = "ABCD";
+    courseFN = coursePrefix + coursec;
+    courselist.push(courseFN);
+    courselist[courselist.length-1] ={
+        code:coursec,
+        class:null,
+};
+    console.log("Success");
 }
